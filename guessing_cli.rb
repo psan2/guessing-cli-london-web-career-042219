@@ -8,7 +8,7 @@ def run_guessing_game
     if input = "exit"
       puts "Goodbye!"
       break
-    elsif input.to_i == number
+    elsif input.to_i == :rand
       "You guessed the correct number!"
       break
     else
