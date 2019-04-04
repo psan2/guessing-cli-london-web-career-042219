@@ -4,7 +4,7 @@ def run_guessing_game
   loop do
     puts "Guess a number between 1 and 6."
     input = gets.chomp
-    number = rand(1...6)
+    :rand = rand(1...6)
     if input = "exit"
       puts "Goodbye!"
       break
