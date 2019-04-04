@@ -1,19 +1,17 @@
 # Code your solution here!
 def run_guessing_game
-
+    
   loop do
     puts "Guess a number between 1 and 6."
-    input = gets.chomp
-    number = rand(1...6)
-    if input == "exit"
+    guess = gets.chomp
+    number = rand(1..6)
+    if guess == "exit"
       puts "Goodbye!"
       break
-    elsif input.to_i == number
-      "You guessed the correct number!"
-      break
+    elsif guess.to_i == number
+      puts "You guessed the correct number!"
     else
-      "The computer guessed #{number}."
-      break
-    end
+      puts "The computer guessed #{number}."        
   end
+  
 end
