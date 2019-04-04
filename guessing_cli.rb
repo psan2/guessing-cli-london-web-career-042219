@@ -10,8 +10,10 @@ def run_guessing_game
       break
     elsif input.to_i == number
       "You guessed the correct number!"
+      break
     else
       "The computer guessed #{number}."
+      break
     end
   end
 end
